@@ -18,7 +18,7 @@
   }
 
   .header {
-    background: linear-gradient(to right, #0c3d1e, mediumturquoise);
+    background: linear-gradient(to right, #868b88, rgb(33, 33, 33));
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -128,11 +128,22 @@
   .contact-form .submit-button:hover {
     background-color: #0056b3;
   }
-  
+
+  .Fadein {
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: fadeinuptodown 1s forwards;
+  }
+  @keyframes fadeinuptodown {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 </style>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-light  Fadein">
     <div class="container-fluid">
         <a class="navbar-brand" href="Index.html"><img src="homeNAVBAR.png" style="width:100px; height:auto;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
